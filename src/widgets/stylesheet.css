@@ -1,0 +1,6 @@
+/* Qt Stylesheet syntax is similar to CSS2          */
+/* https://doc.qt.io/qt-5/stylesheet-reference.html */
+
+#idString {
+  color: rgb(10, 153, 255);
+}

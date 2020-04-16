@@ -1,0 +1,4 @@
+build/
+dist/
+*.pro.user
+*.pro.user.*

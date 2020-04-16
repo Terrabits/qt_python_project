@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+
+# paths
+SCRIPTS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+ROOT_DIR="$SCRIPTS_DIR/.."
+
+
+function update() {
+  NAME=$1
+  pyside2-uic "qtcreator/$NAME.ui" > "src/widgets/ui_$NAME.py"
+}
+
+# exit on error
+# echo on
+set -e
+set -x
+
+cd "$ROOT_DIR"
+update mainwindow
