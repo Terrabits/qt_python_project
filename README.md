@@ -20,15 +20,17 @@ This project was developed and tested with the following, more specific versions
 - Python 3.8.1
 - packages listed in `requirements.txt.lock`
 
-## Qt Creator Integration
+## Qt Creator
 
-`MainWindow` can be opened in Qt Creator and edited via the included `qtcreator.pro` project file.
+`MainWindow` can be opened in Qt Creator and edited graphically via the included `qtcreator.pro` project file.
+
+![The main window open for editing in Qt Creator](./doc/images/qt_creator.png)
 
 More information on Qt Creator can be found here:
 
 [Getting Started | Qt Creator Manual](https://doc.qt.io/qtcreator/creator-getting-started.html)
 
-To apply any changes, re-run `scripts/update-ui`. The updated `src/widgets/ui_mainwindow.py` file should be committed along with the updated `qtcreator/mainwindow.ui` file.
+The corresponding python source code is automatically updated in `scripts/build`, but it can be updated without building via `scripts/update_ui`
 
 ### StyleSheet
 
@@ -44,7 +46,7 @@ There are bash scripts located in the `scripts` dir. They should be simple enoug
 
 This project template, as a way of example, provides a GUI for querying an instrument ID string.
 
-![Screenshot with ID String displayed](./doc/screenshots/with_id_string.png)
+![Screenshot with ID String displayed](./doc/images/screenshots/with_id_string.png)
 
 ### Getting Started
 
