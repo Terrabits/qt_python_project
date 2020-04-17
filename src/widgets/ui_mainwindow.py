@@ -25,53 +25,53 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
         self.verticalLayout.setObjectName(u"verticalLayout")
-        self.widget_2 = QWidget(self.centralwidget)
-        self.widget_2.setObjectName(u"widget_2")
-        self.gridLayout = QGridLayout(self.widget_2)
+        self.inputs = QWidget(self.centralwidget)
+        self.inputs.setObjectName(u"inputs")
+        self.gridLayout = QGridLayout(self.inputs)
         self.gridLayout.setObjectName(u"gridLayout")
-        self.ipAddressLabel = QLabel(self.widget_2)
+        self.ipAddressLabel = QLabel(self.inputs)
         self.ipAddressLabel.setObjectName(u"ipAddressLabel")
 
         self.gridLayout.addWidget(self.ipAddressLabel, 0, 0, 1, 1)
 
-        self.ipAddress = QLineEdit(self.widget_2)
+        self.ipAddress = QLineEdit(self.inputs)
         self.ipAddress.setObjectName(u"ipAddress")
 
         self.gridLayout.addWidget(self.ipAddress, 0, 1, 1, 1)
 
-        self.label = QLabel(self.widget_2)
-        self.label.setObjectName(u"label")
+        self.idStringLabel = QLabel(self.inputs)
+        self.idStringLabel.setObjectName(u"idStringLabel")
 
-        self.gridLayout.addWidget(self.label, 1, 0, 1, 1)
+        self.gridLayout.addWidget(self.idStringLabel, 1, 0, 1, 1)
 
-        self.idString = QLineEdit(self.widget_2)
+        self.idString = QLineEdit(self.inputs)
         self.idString.setObjectName(u"idString")
         self.idString.setReadOnly(True)
 
         self.gridLayout.addWidget(self.idString, 1, 1, 1, 1)
 
 
-        self.verticalLayout.addWidget(self.widget_2)
+        self.verticalLayout.addWidget(self.inputs)
 
         self.verticalSpacer = QSpacerItem(20, 23, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
         self.verticalLayout.addItem(self.verticalSpacer)
 
-        self.widget = QWidget(self.centralwidget)
-        self.widget.setObjectName(u"widget")
-        self.horizontalLayout = QHBoxLayout(self.widget)
+        self.buttons = QWidget(self.centralwidget)
+        self.buttons.setObjectName(u"buttons")
+        self.horizontalLayout = QHBoxLayout(self.buttons)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.horizontalSpacer = QSpacerItem(315, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.buttonsSpacer = QSpacerItem(315, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.horizontalLayout.addItem(self.horizontalSpacer)
+        self.horizontalLayout.addItem(self.buttonsSpacer)
 
-        self.button = QPushButton(self.widget)
+        self.button = QPushButton(self.buttons)
         self.button.setObjectName(u"button")
 
         self.horizontalLayout.addWidget(self.button)
 
 
-        self.verticalLayout.addWidget(self.widget)
+        self.verticalLayout.addWidget(self.buttons)
 
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
@@ -90,7 +90,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.ipAddressLabel.setText(QCoreApplication.translate("MainWindow", u"IP Address", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"ID String", None))
+        self.idStringLabel.setText(QCoreApplication.translate("MainWindow", u"ID String", None))
         self.button.setText(QCoreApplication.translate("MainWindow", u"Get ID String", None))
     # retranslateUi
 
