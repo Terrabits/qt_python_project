@@ -42,4 +42,8 @@ There are bash scripts located in the `scripts` dir. They should be simple enoug
 
 This project template, as a way of example, provides a GUI for querying an instrument ID string.
 
-![Screenshot](./doc/screenshots/screenshot.png)
+![Screenshot with ID String displayed](./doc/screenshots/with_id_string.png)
+
+### Getting Started
+
+Most of the work in the application is done in `Controller.handle_button_click()`, located at `src/controller.py`. This is a good place to start to see all the pieces (Model, View and Controller) coming together.
