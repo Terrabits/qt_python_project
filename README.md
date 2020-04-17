@@ -4,6 +4,8 @@ This is a model-view-controller (MVC) project template built around Qt for Pytho
 
 The goal is to create a design pattern which leverages the usability of Qt Creator while spending as little time as possible with Qt itself.
 
+Working build scripts, built around `pyinstaller`, are included as well.
+
 ## Requirements
 
 This project should theoretically work with a broad range of environments.
