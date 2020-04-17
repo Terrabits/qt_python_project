@@ -9,5 +9,8 @@ ROOT_DIR="$SCRIPTS_DIR/.."
 set -e
 set -x
 
+# update python ui files
+$SCRIPTS_DIR/update_ui
+
 cd "$ROOT_DIR"
 pyinstaller pyinstaller.spec
