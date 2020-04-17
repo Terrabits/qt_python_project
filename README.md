@@ -38,9 +38,19 @@ The Qt StyleSheet located at `src/widgets/stylesheet.css` gets loaded into MainW
 
 The practical effect of this is that the current styles are not reflected in the project in Qt Creator. As a work-around, to see them in Qt Creator, copy-paste the contents of the file into the widget property directly.
 
-## scripts
+## Scripts
 
 There are bash scripts located in the `scripts` dir. They should be simple enough that, even if you are in windows, you can use them as a guide to performing the task at hand.
+
+### `pyenv`
+
+`scripts/uninstall` and `scripts/reinstall` require that you are using `pyenv` and `pyenv-virtualenv`, and that your `.python-version` file has the following syntax:
+
+`python_version@environment_name`
+
+For more information on `pyenv`, see:
+
+[pyenv/pyenv: Simple Python version management](https://github.com/pyenv/pyenv)
 
 ## Hello World
 
