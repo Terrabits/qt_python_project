@@ -88,7 +88,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Qt Python Project", None))
         self.ipAddressLabel.setText(QCoreApplication.translate("MainWindow", u"IP Address", None))
         self.idStringLabel.setText(QCoreApplication.translate("MainWindow", u"ID String", None))
         self.button.setText(QCoreApplication.translate("MainWindow", u"Get ID String", None))

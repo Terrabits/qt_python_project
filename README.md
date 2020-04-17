@@ -37,3 +37,9 @@ The practical effect of this is that the current styles are not reflected in the
 ## scripts
 
 There are bash scripts located in the `scripts` dir. They should be simple enough that, even if you are in windows, you can use them as a guide to performing the task at hand.
+
+## Hello World
+
+This project template, as a way of example, provides a GUI for querying an instrument ID string.
+
+![Screenshot](./doc/screenshots/screenshot.png)
