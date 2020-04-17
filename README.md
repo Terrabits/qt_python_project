@@ -2,7 +2,7 @@
 
 This is a model-view-controller (MVC) project template built around Qt for Python.
 
-The goal is to create a design pattern which leverages the usability of Qt Creator while spending as little time as possible with Qt itself.
+The goal is to create a design pattern which leverages Qt Creator while spending as little time as possible with Qt itself.
 
 Working build scripts, built around `pyinstaller`, are included as well.
 
