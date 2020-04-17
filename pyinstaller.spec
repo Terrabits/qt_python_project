@@ -5,7 +5,7 @@ from pathlib import Path
 
 # find paths relative to this file
 root_path  = Path('.')
-hooks_path = root_path / 'pyinstaller-hooks'
+hooks_path = root_path / 'pyinstaller_hooks'
 stylesheet_path = root_path / 'src' / 'widgets' / 'stylesheet.css'
 icon_path       = root_path / 'src' / 'widgets' / 'images' / 'icon.ico'
 
