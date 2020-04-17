@@ -10,4 +10,4 @@ set -e
 set -x
 
 cd "$ROOT_DIR"
-pyinstaller szv.spec
+pyinstaller pyinstaller.spec
