@@ -42,15 +42,27 @@ The practical effect of this is that the current styles are not reflected in the
 
 There are bash scripts located in the `scripts` dir. They should be simple enough that, even if you are in windows, you can use them as a guide to performing the task at hand.
 
-### `pyenv`
+### A note about `scripts/uninstall`, `scripts/reinstall`
 
-`scripts/uninstall` and `scripts/reinstall` require that you are using `pyenv` and `pyenv-virtualenv`, and that your `.python-version` file has the following syntax:
+I use `pyenv` and `pyenv-virtualenv` to achieve [RVM-named-gemset-inspired](https://rvm.io/gemsets/basics) virtual environments for my projects.
 
-`python_version@environment_name`
+`scripts/uninstall` and `scripts/reinstall` require that you are using `pyenv`, `pyenv-virtualenv`, and that your `.python-version` file follows this syntax:
+
+`<python-version>@<environment-name>`
+
+For example, this is how I configured my system:
+
+```shell
+pyenv install 3.8.1
+pyenv virtualenv 3.8.1 3.8.1@qt_python_project
+pyenv local 3.8.1@qt_python_project
+```
 
 For more information on `pyenv`, see:
 
 [pyenv/pyenv: Simple Python version management](https://github.com/pyenv/pyenv)
+
+If you are not using `pyenv` (which does not work on Windows) you can safely ignore the uninstall, reinstall scripts.
 
 ## Hello World
 
