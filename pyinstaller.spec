@@ -4,9 +4,15 @@ from pathlib import Path
 
 
 # find paths relative to this file
-root_path  = Path(__file__).parent
+root_path  = Path('.')
 hooks_path = root_path / 'pyinstaller-hooks'
-icon_path  = root_path / 'src' / 'widgets' / 'images' / 'icon.ico'
+stylesheet_path = root_path / 'src' / 'widgets' / 'stylesheet.css'
+icon_path       = root_path / 'src' / 'widgets' / 'images' / 'icon.ico'
+
+# include data files
+#             src                   dest
+datas = [(str(stylesheet_path), str(stylesheet_path.parent)),
+         (str(icon_path      ), str(icon_path.parent))]
 
 # path for pyinstaller hooks
 # https://pyinstaller.readthedocs.io/en/stable/hooks.html
@@ -23,7 +29,7 @@ block_cipher  = None
 a = Analysis(['__main__.py'],
              pathex=[str(root_path)],
              binaries=[],
-             datas=[],
+             datas=datas,
              hiddenimports=hiddenimports,
              hookspath=hookspath,
              runtime_hooks=[],
